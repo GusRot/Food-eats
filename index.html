@@ -23,196 +23,239 @@
 
     <main>
         <h1 class="main-text">Primeiro, seu prato</h1>
+        <!-- PRIMEIRA SESSÃO -->
         <section class="container">
-            <div class="food-container">
-                <img src="assets/frango_yin_yang.png">
-                <h3 class="main-course">Frango Yin Yang</h3>
-                <p class="food-description">Um pouco de batata, um pouco de salada</p>
-                <div class="flex">
-                    <p class="food-price">R$ 9,90</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <!-- MODELO DE PEDIDO EM CADA SESSÃO -->
+            <button id="main00-selected1" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/frango_yin_yang.png">
+                    <h3 class="main00-order">Frango Yin Yang</h3>
+                    <p class="food-description">Um pouco de batata um pouco de salada</p>
+                    <div class="flex">
+                        <p class="main00-price">9,90</p>
+                        <ion-icon id="main001" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button> <!-- MODELO DE PEDIDO EM CADA SESSÃO -->
 
-            <div class="food-container">
-                <img src="assets/frango_yin_yang.png">
-                <h3 class="main-course">Frango Yin</h3>
-                <p class="food-description">Um pouco de batata, um pouco de salada</p>
-                <div class="flex">
-                    <p class="food-price">R$ 10,90</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="main00-selected2" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/frango_yin_yang.png">
+                    <h3 class="main00-order">Frango Yin</h3>
+                    <p class="food-description">Um pouco de batata, um pouco de salada</p>
+                    <div class="flex">
+                        <p class="main00-price">10,90</p>
+                        <ion-icon id="main002" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>   
 
-            <div class="food-container">
-                <img src="assets/frango_yin_yang.png">
-                <h3 class="main-course">Frango Yang</h3>
-                <p class="food-description">Um pouco de batata, um pouco de salada</p>
-                <div class="flex">
-                    <p class="food-price">R$ 11,90</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="main00-selected3" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/frango_yin_yang.png">
+                    <h3 class="main00-order">Frango Yang</h3>
+                    <p class="food-description">Um pouco de batata, um pouco de salada</p>
+                    <div class="flex">
+                        <p class="main00-price">11,90</p>
+                        <ion-icon id="main003" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/frango_yin_yang.png">
-                <h3 class="main-course">Frango Yang Yin</h3>
-                <p class="food-description">Um pouco de batata, um pouco de salada</p>
-                <div class="flex">
-                    <p class="food-price">R$ 12,90</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="main00-selected4" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/frango_yin_yang.png">
+                    <h3 class="main00-order">Frango Yang Yin</h3>
+                    <p class="food-description">Um pouco de batata, um pouco de salada</p>
+                    <div class="flex">
+                        <p class="main00-price">12,90</p>
+                        <ion-icon id="main004" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/frango_yin_yang.png">
-                <h3 class="main-course">Frango Yang Yang</h3>
-                <p class="food-description">Um pouco de batata, um pouco de salada</p>
-                <div class="flex">
-                    <p class="food-price">R$ 13,90</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="main00-selected5" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/frango_yin_yang.png">
+                    <h3 class="main00-order">Frango Yang Yang</h3>
+                    <p class="food-description">Um pouco de batata, um pouco de salada</p>
+                    <div class="flex">
+                        <p class="main00-price">13,90</p>
+                        <ion-icon id="main005" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
         </section>
 
         <h1 class="main-text">Agora, sua bebida</h1>
+        <!-- SEGUNDA SESSÃO -->
         <section class="container">
-            <div class="food-container">
-                <img src="assets/coquinha_gelada.png">
-                <h3 class="main-course">Coca zero quente</h3>
-                <p class="food-description">lata 350</p>
-                <div class="flex">
-                    <p class="food-price">R$ 2,70</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
 
-            <div class="food-container">
-                <img src="assets/coquinha_gelada.png">
-                <h3 class="main-course">Coca Quente</h3>
-                <p class="food-description">Lata 350ml</p>
-                <div class="flex">
-                    <p class="food-price">R$ 3,20</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="drink0-selected1" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/coquinha_gelada.png">
+                    <h3 class="drink0-order">Coca zero quente</h3>
+                    <p class="food-description">lata 350</p>
+                    <div class="flex">
+                        <p class="drink0-price">2,70</p>
+                        <ion-icon id="drink01" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/coquinha_gelada.png">
-                <h3 class="main-course">Coca</h3>
-                <p class="food-description">Lata 350ml</p>
-                <div class="flex">
-                    <p class="food-price">R$ 3,70</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="drink0-selected2" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/coquinha_gelada.png">
+                    <h3 class="drink0-order">Coca Quente</h3>
+                    <p class="food-description">Lata 350ml</p>
+                    <div class="flex">
+                        <p class="drink0-price">3,20</p>
+                        <ion-icon id="drink02" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/coquinha_gelada.png">
-                <h3 class="main-course">Coca Fria</h3>
-                <p class="food-description">Lata 350ml</p>
-                <div class="flex">
-                    <p class="food-price">R$ 4,20</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="drink0-selected3" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/coquinha_gelada.png">
+                    <h3 class="drink0-order">Coca</h3>
+                    <p class="food-description">Lata 350ml</p>
+                    <div class="flex">
+                        <p class="drink0-price">3,70</p>
+                        <ion-icon id="drink03" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>   
 
-            <div class="food-container">
-                <img src="assets/coquinha_gelada.png">
-                <h3 class="main-course">Coca Gelada</h3>
-                <p class="food-description">Lata 350ml</p>
-                <div class="flex">
-                    <p class="food-price">R$ 4,70</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="drink0-selected4" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/coquinha_gelada.png">
+                    <h3 class="drink0-order">Coca Fria</h3>
+                    <p class="food-description">Lata 350ml</p>
+                    <div class="flex">
+                        <p class="drink0-price">4,20</p>
+                        <ion-icon id="drink04" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/coquinha_gelada.png">
-                <h3 class="main-course">Coca Super Gelada</h3>
-                <p class="food-description">Lata 350ml</p>
-                <div class="flex">
-                    <p class="food-price">R$ 5,20</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="drink0-selected5" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/coquinha_gelada.png">
+                    <h3 class="drink0-order">Coca Gelada</h3>
+                    <p class="food-description">Lata 350ml</p>
+                    <div class="flex">
+                        <p class="drink0-price">4,70</p>
+                        <ion-icon id="drink05" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>   
 
-            <div class="food-container">
-                <img src="assets/coquinha_gelada.png">
-                <h3 class="main-course">Coca com gelo e limao</h3>
-                <p class="food-description">Lata 350ml</p>
-                <div class="flex">
-                    <p class="food-price">R$ 5,70</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="drink0-selected6" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/coquinha_gelada.png">
+                    <h3 class="drink0-order">Coca Super Gelada</h3>
+                    <p class="food-description">Lata 350ml</p>
+                    <div class="flex">
+                        <p class="drink0-price">5,20</p>
+                        <ion-icon id="drink06" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
+
+            <button id="drink0-selected7" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/coquinha_gelada.png">
+                    <h3 class="drink0-order">Coca com gelo e limao</h3>
+                    <p class="food-description">Lata 350ml</p>
+                    <div class="flex">
+                        <p class="drink0-price">5,70</p>
+                        <ion-icon id="drink07" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </button>
         </section>
 
         <h1 class="main-text">Por fim, sua sobremesa</h1>
+        <!-- TERCEIRA SESSÃO -->
         <section class="container padding">
-            <div class="food-container">
-                <img src="assets/pudim.png">
-                <h3 class="main-course">Pudim mini</h3>
-                <p class="food-description">Apenas pudim</p>
-                <div class="flex">
-                    <p class="food-price">R$ 1,50</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
-                </div>
-            </div>
 
-            <div class="food-container">
-                <img src="assets/pudim.png">
-                <h3 class="main-course">Pudim pequeno</h3>
-                <p class="food-description">Apenas pudim</p>
-                <div class="flex">
-                    <p class="food-price">R$ 2,00</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="desert-selected1" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/pudim.png">
+                    <h3 class="desert-order">Pudim mini</h3>
+                    <p class="food-description">Apenas pudim</p>
+                    <div class="flex">
+                        <p class="desert-price">1,50</p>
+                        <ion-icon id="desert1" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>   
 
-            <div class="food-container">
-                <img src="assets/pudim.png">
-                <h3 class="main-course">Pudim medio</h3>
-                <p class="food-description">Apenas pudim</p>
-                <div class="flex">
-                    <p class="food-price">R$ 2,50</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="desert-selected2" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/pudim.png">
+                    <h3 class="desert-order">Pudim pequeno</h3>
+                    <p class="food-description">Apenas pudim</p>
+                    <div class="flex">
+                        <p class="desert-price">2,00</p>
+                        <ion-icon id="desert2" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/pudim.png">
-                <h3 class="main-course">Pudim grande</h3>
-                <p class="food-description">Apenas pudim</p>
-                <div class="flex">
-                    <p class="food-price">R$ 3,00</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="desert-selected3" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/pudim.png">
+                    <h3 class="desert-order">Pudim medio</h3>
+                    <p class="food-description">Apenas pudim</p>
+                    <div class="flex">
+                        <p class="desert-price">2,50</p>
+                        <ion-icon id="desert3" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/pudim.png">
-                <h3 class="main-course">Pudim gigante</h3>
-                <p class="food-description">Apenas pudim</p>
-                <div class="flex">
-                    <p class="food-price">R$ 3,50</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="desert-selected4" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/pudim.png">
+                    <h3 class="desert-order">Pudim grande</h3>
+                    <p class="food-description">Apenas pudim</p>
+                    <div class="flex">
+                        <p class="desert-price">3,00</p>
+                        <ion-icon id="desert4" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
 
-            <div class="food-container">
-                <img src="assets/pudim.png">
-                <h3 class="main-course">3 Pudins medio</h3>
-                <p class="food-description">Apenas pudim</p>
-                <div class="flex">
-                    <p class="food-price">R$ 4,00</p>
-                    <ion-icon name="checkmark-circle"></ion-icon>
+            <button id="desert-selected5" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/pudim.png">
+                    <h3 class="desert-order">Pudim gigante</h3>
+                    <p class="food-description">Apenas pudim</p>
+                    <div class="flex">
+                        <p class="desert-price">3,50</p>
+                        <ion-icon id="desert5" name="checkmark-circle"></ion-icon>
+                    </div>
                 </div>
-            </div>
+            </button>
+
+            <button id="desert-selected6" class="order-button" onclick="selectOrder(this)">
+                <div class="food-container">
+                    <img src="assets/pudim.png">
+                    <h3 class="desert-order">3 Pudins medio</h3>
+                    <p class="food-description">Apenas pudim</p>
+                    <div class="flex">
+                        <p class="desert-price">4,00</p>
+                        <ion-icon id="desert6" name="checkmark-circle"></ion-icon>
+                    </div>
+                </div>
+            </button>
+
         </section>
 
         <div class="flex2">
-            <button class="button" onclick="">Selecione os 3 itens <br>para fechar o pedido </button>
+                <button disabled id="close-order" class="button" onclick="closeOrder()" >Selecione os 3 itens <br>para fechar o pedido </button>
         </div>
     </main>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> <!-- carrega os icones utilizados-->
