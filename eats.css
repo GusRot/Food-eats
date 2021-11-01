@@ -64,7 +64,7 @@ h2 {
     overflow-x: scroll;
 }
 
-.padding {
+.desert {
     margin-bottom: 110px;
 }
 
@@ -91,6 +91,20 @@ h2 {
     justify-content: space-between;
     align-items:flex-start;
     }
+
+.main img {
+    object-fit:cover;
+    object-position: 50% 70%;
+}
+
+.drink img {
+    object-fit:cover;
+}
+
+.desert img {
+    object-fit:cover;
+    object-position: 50% 70%;
+}
 
 .main00-order {
     font-family: 'Righteous', cursive;
@@ -188,6 +202,52 @@ ion-icon {
     z-index: 1;
 }
 
+.confirm-order-container {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 100;
+    left:0;
+    top: 0;
+    font-size: 22px;
+}
+
+.confirm-order {
+    width: 95%;
+    height: 50%;
+    background-color: #50D074;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    padding: 26px;
+}
+
+.confirm-order p:first-child {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.confirm-order div {
+    display: flex;
+    justify-content: space-between;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.confirm-order div p:last-child::before {
+    content: 'R$ ';
+}
+
 /* ADICIONAR COM JS */
 .main00-selected {
     border: 5px solid #32B72F;
@@ -217,7 +277,39 @@ ion-icon {
     background-color: #32B72F;
     cursor: pointer;
 }
+
+.hidden {
+    visibility: hidden;
+}
 /* ADICIONAR COM JS */
+
+.button-ok {
+    height: 52px;
+    width: 0.7%;
+    border: 0px solid black;
+    border-radius: 50px;
+    background: #FFFFFF;
+    padding: 4px 10px;
+    font-size: 22px;
+    color: #50D074;
+    margin: 7px auto 0 auto;
+    cursor: pointer;
+}
+
+.button-cancel {
+    height: 42px;
+    width: 0.7%;
+    display: inline;
+    border: 0px solid black;
+    border-radius: 50px;
+    background: #50D074;
+    padding: 0px;
+    font-size: 22px;
+    color: #FFFFFF;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
 /* RSPONSIVIDADE, IMPEDIR TELA MAIOR QUE 500px */
 @media (min-width: 501px) {
     .fixed-header {
@@ -236,5 +328,17 @@ ion-icon {
 
     .flex2 {
         width: 500px;
+    }
+
+    .confirm-order {
+        width: 460px;
+    }
+
+    .button-ok {
+        width: 329px;
+    }
+
+    .button-cancel {
+        width: 329px;
     }
 }
