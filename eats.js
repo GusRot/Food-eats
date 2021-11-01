@@ -7,7 +7,7 @@ let cClick = null;
 let aPrice = null;
 let bPrice = null;
 let cPrice = null;
-let price = 0;
+let priceT = 0;
 
 function selectOrder(select) {
     //Selecionar o ID do botao selecionado, tirar o numero para encontrar a classe respectiva no CSS e adiocionar borda//
@@ -146,13 +146,67 @@ function selectOrder(select) {
         buttonOn.innerHTML = "Fechar Pedido";
         x++;
     }
+
+}
+
+function reviewOrder() {
+
+const showHidden = document.querySelector(".hidden");
+showHidden.classList.remove("hidden");
+
+const priceA = parseFloat(aPrice.replace(',','.'));
+const priceB = parseFloat(bPrice.replace(',','.'));
+const priceC = parseFloat(cPrice.replace(',','.'));
+priceT = (priceA + priceB + priceC).toFixed(2);
+
+const htmlA = document.getElementById("show-main-order");
+htmlA.innerHTML = aClick;
+const htmlB = document.getElementById("show-drink-order");
+htmlB.innerHTML = bClick;
+const htmlC = document.getElementById("show-desert-order");
+htmlC.innerHTML = cClick;
+
+const htmlPriceA = document.getElementById("show-main-price");
+htmlPriceA.innerHTML = ((priceA.toFixed(2)).replace('.',','));
+const htmlPriceB = document.getElementById("show-drink-price");
+htmlPriceB.innerHTML = ((priceB.toFixed(2)).replace('.',','));
+const htmlPriceC = document.getElementById("show-desert-price");
+htmlPriceC.innerHTML = ((priceC.toFixed(2)).replace('.',','));
+
+const htmlPriceT = document.getElementById("show-total-price");
+htmlPriceT.innerHTML = (priceT.replace('.',','));
+  
+}
+
+function cancelOrder() {
+    const showHidden = document.querySelector(".confirm-order-container");
+    showHidden.classList.add("hidden");
 }
 
 function closeOrder() {
-
-    price = (parseFloat(aPrice.replace(',','.')) + parseFloat(bPrice.replace(',','.')) + parseFloat(cPrice.replace(',','.'))).toFixed(2);
-
-    const texto = aClick + " + " + bClick + " + " + cClick + " total = " + price + " reais";
-
+    const texto = aClick + " + " + bClick + " + " + cClick + " total = " + (priceT.replace('.',',')) + " reais";
     alert(texto);
+    const showHidden = document.querySelector(".confirm-order-container");
+    showHidden.classList.add("hidden");
+
+    const buttonOn = document.getElementById("close-order");
+    document.getElementById("close-order").disabled = true;
+    buttonOn.classList.remove("on");
+    buttonOn.innerHTML = "Selecione os 3 itens <br>para fechar o pedido";
+
+    const removeSelection = document.querySelector(".show-icon-main00");
+    const removeSelection2 = document.querySelector(".show-icon-drink0");
+    const removeSelection3 = document.querySelector(".show-icon-desert");
+
+    removeSelection.classList.remove("show-icon-main00");
+    removeSelection2.classList.remove("show-icon-drink0");
+    removeSelection3.classList.remove("show-icon-desert");
+
+    const removeSelection4 = document.querySelector(".main00-selected");
+    const removeSelection5 = document.querySelector(".drink0-selected");
+    const removeSelection6 = document.querySelector(".desert-selected");
+
+    removeSelection4.classList.remove("main00-selected");
+    removeSelection5.classList.remove("drink0-selected");
+    removeSelection6.classList.remove("desert-selected");
 }
